@@ -62,7 +62,7 @@
                 d3.select(".chart").html("");
                 var data = [5963100,3196560,1598640,1272430,1193690,1169290,596089,588399,535652,516814];
             var country = ["us","jp","de","fr","gb","it","ca","ir","es","ru"];
-            unit = data[0] / 800;
+            unit = data[0] / 1100;
             var gdpScale = d3.scaleLinear().domain([data[0],0]).range([1100,0]);
             var countryScale = d3.scaleBand().domain(country).range([0,400]);
             tooltip = d3.select("#tooltip");
